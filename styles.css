@@ -1,0 +1,329 @@
+/* Universal */
+
+@font-face {
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/lato/v24/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/oswald/v49/TK3iWkUHHAIjg752GT8Gl-1PKw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/oswald/v49/TK3iWkUHHAIjg752GT8Gl-1PKw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+html, body {
+    font-size: 18px;
+    color: #252B48;
+    padding: 0;
+    margin: 0;
+}
+
+.center {
+    text-align: center;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Oswald';
+}
+
+p, .who-we-are li {
+    font-family: 'Lato';
+}
+
+nav li {
+    font-family: 'Oswald';
+    font-weight: 300;
+}
+
+.main-content {
+    position: relative;
+  top: 4.5rem;
+}
+
+/* Header */
+
+header {
+    position: fixed;
+    top: 0rem;
+    z-index: 100;
+    width: 100%;
+    border-bottom: solid 1px #c6c1c1;
+    background-color: white;
+  }
+  
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.875rem;
+    height: 2rem;
+  }
+
+  .logo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .logo img {
+    width: 100%;
+    height: 100%;
+  }
+
+  header nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  nav li {
+    list-style: none;
+    padding: 1.5rem;
+  }
+  
+  nav a {
+    vertical-align: bottom;
+    font-size: 1rem;
+    color: #4a4a4a;
+  }
+  
+  nav .button {
+    padding: .1875rem .5rem;
+    background-color: #313866;
+    color: white;
+  }
+
+
+/* Hero */
+
+.hero-banner {
+    background-image: url(./resources/images/bg_space_seamless_1.png);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #FDE5EC;
+    width: 100%;
+    height: 700px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.hero-container {
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    padding: 5%;
+}
+
+
+.hero-container img {
+    width: 80%;
+}
+
+/* About Us */
+
+.who-we-are {
+    margin: 2.5rem 7%;
+}
+
+.who-we-are h2 {
+    text-align: center;
+    padding-top: 1.8rem;
+    font-size: 2.4rem;
+    text-decoration: underline;
+    display: block;
+}
+
+.about-container {
+    width: 100%;
+    height: auto;
+    margin: 5% auto;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.about-box {
+    display: block;
+    align-self: stretch;
+    width: 30%;
+}
+
+.about-box h3 {
+    text-align: center;
+}
+
+.about-box p, ul, ol {
+    line-height: 1.5;
+}
+
+/* Our Portfolio */
+
+#portfolio {
+    margin: 3% 10%;
+}
+
+.portfolio-container {
+    width: 100%;
+    max-height: auto;
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#portfolio h2 {
+    padding-top: 1.8rem;
+    font-size: 2.4rem;
+    text-decoration: underline;
+    text-align: center;
+    display: block;
+}
+
+.portfolio-item {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    border: 1px solid #313866;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 0.5 20%;
+    align-items: space-between;
+    justify-content: space-evenly;
+}
+
+.portfolio-item img {
+   width: auto;
+   height: auto;
+   max-width: 250px;
+   max-height: 200px;
+}
+
+.portfolio-item h4 {
+    text-align: center;
+    font-style: italic;
+}
+
+/* Employees */
+
+#employees {
+    margin: 3% 10%;
+}
+
+.team {
+    width: 100%;
+    max-height: auto;
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+#employees h2 {
+    padding-top: 1.8rem;
+    font-size: 2.4rem;
+    text-decoration: underline;
+    text-align: center;
+    display: block;
+}
+
+.employee {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    display: flex;
+    flex-flow: column wrap;
+    flex: 1 0.5 20%;
+    align-items: center;
+    justify-content: center;
+}
+
+.employee img {
+    width: auto;
+    height: auto;
+    max-width: 400px;
+    max-height: 320px;
+}
+
+.employee h4 {
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    border: 1px dotted #c6c1c1; 
+}
+
+.employee p {
+    font-style: italic;
+}
+
+/* Contact Us */
+
+.contact-field {
+    width: 100%;
+    height: 300px;
+    border-bottom: solid 1px #c6c1c1;
+    background-image: url(./resources/images/hero-contact.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    color: whitesmoke; 
+}
+
+.contact-section {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding: 15px;
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0 14rem;
+    line-height: 2;
+    background-color: rgba(253, 229, 236, 0.2);
+    border-radius: 15px;
+}
+
+/* Footer */
+
+footer {
+    font-size: 0.675rem;
+    font-style: italic;
+    background-color: whitesmoke;
+    color: #252B48;
+    text-align: right;
+    padding: 1rem 4.5rem;
+}
